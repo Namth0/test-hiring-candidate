@@ -27,12 +27,12 @@ The project focuses on testing the functionality of the Conversational Language 
 
 To get the access to the API key when you register, you need to go to the resource created (I chose the North EU region), then select the type of resource created. For the project, we used the language type (in Azure Studio) because we needed it to create a project of type CLU (Conversational Language Understanding).
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](doc/image.png)
+![alt text](doc/image-1.png)
 
 So basically now you get acces to the API key to make API calls with the Python scripts
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](doc/image-2.png)
+![alt text](doc/image-3.png)
 
 ## Language Studio
 
@@ -43,19 +43,19 @@ don't forget to choose the correct subscription for the project !
 1. For the Schema definition i create two Intents,Intents are tasks or actions the user wants to perform:
     - GetRecipe
     - GetIngredient
-    - ![alt text](image-4.png)
+    - ![alt text](doc/image-4.png)
 
    and three Entities ,Entities are terms relevant to the user's intent and can be extracted to help fulfill the user’s intent:
    - Dish
    - Ingredient
    - Recipe
-   - ![alt text](image-5.png)
+   - ![alt text](doc/image-5.png)
 
 2. Now we create Data Labeling ,i did 15 utterances for the GetRecipe intents and for the Getingredient intents , that's our Training set
 
     - the utterances can be create with a JSON who support the file format or manually
 
-    ![alt text](image-6.png)
+    ![alt text](doc/image-6.png)
 
 3. After we create our Data labelling we can do a training jobs , in order to create a training jobs you need to chose :
 
@@ -63,22 +63,22 @@ don't forget to choose the correct subscription for the project !
     - a training mode ( i chose the free one)
     - a data spliting ( i did 75% for the training and 25 % for testing)
 
-    ![alt text](image-7.png)
-    ![alt text](image-8.png)
+    ![alt text](doc/image-7.png)
+    ![alt text](doc/image-8.png)
 
 4. Now we close to deploy our model , but before we do that, we can see the performance of our model performance :
 
     - for mine , is not the best because i did some unclear distincition between intents in training set , and didn't give many labels for the training set , but we can see a score of 71%
 
-    ![alt text](image-9.png)
+    ![alt text](doc/image-9.png)
 
 5. finally we can deploying our model , we chose a model name and deploy , in order to do after some test,with our Python scripts we need the ENDPOINT , to get the endpoint u need to go to the get prediction URL of our deplpying model then take it and place it to the the script
     
-    ![alt text](image-10.png)
-    ![alt text](image-11.png)
+    ![alt text](doc/image-10.png)
+    ![alt text](doc/image-11.png)
 
 Now we can test our deploying models:
-    ![alt text](image-12.png)
+    ![alt text](doc/image-12.png)
 
 
 ## Python Scripts
@@ -125,5 +125,5 @@ The tests in test.py file validate the functionality of the CLUService class by 
 
 These tests ensure that the CLUService class functions as expected and accurately predicts intents for various user queries.
 
-![alt text](image-13.png)
+![alt text](doc/image-13.png)
 
