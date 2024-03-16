@@ -20,6 +20,7 @@ The project focuses on testing the functionality of the Conversational Language 
 1. Sign up for an account on Azure and obtain the API Key.
 2. Clone this repository.
 3. Install the required dependencies using `pip install -r requirements.txt`.
+4. You need to set the api key in the .env file. 
 
 # Step by Step:
 
